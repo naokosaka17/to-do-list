@@ -1,0 +1,78 @@
+body {
+  font-family: 'Gochi Hand', cursive;
+  background-image: url('http://img14.deviantart.net/d14d/i/2004/150/e/d/wallnotebookpaper.jpg');
+}
+
+/*link page css*/
+a{
+  font-size:40px;
+  margin-left: 20px;
+  color: blue;
+}
+a:hover{
+  color: red;
+}
+
+.main{
+  margin-left: 6em;
+}
+h3{
+  margin-bottom:31.8px;
+  margin-top:23px;
+}
+
+.collection{
+  font-size: 25px;
+  padding-left: 20px;
+}
+.collection a.collection-item{
+  line-height: 28px;
+  color: #000;
+}
+
+/*list page*/
+label{
+  color: #000;
+}
+
+label.ng-binding{
+  font-size: 3rem;
+  line-height: 30px;
+}
+
+.checkbox-red[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid red;
+     background-color: red;
+}
+
+
+
+
+/*create page */
+input#textarea1{
+  border-bottom: 1px solid #6BD0F5;
+  box-shadow: 0 1px 0 0 #6BD0F5;
+  margin-top: -0.2em;
+  font-size: 30px;
+}
+
+.duedate{
+  font-size: 30px;
+  color: #000;
+}
+
+input.datepicker{
+border-bottom: 1px solid #6BD0F5;
+box-shadow: 0 1px 0 0 #6BD0F5;
+margin-top: 0.8em;
+font-size: 30px;
+color: #B5B5B3;
+}
+
+input.datepicker:focus{
+border-bottom: 1px solid #6BD0F5;
+box-shadow: 0 1px 0 0 #6BD0F5;
+}
+.datepicker:focus + label {
+  color: #6BD0F5;
+}

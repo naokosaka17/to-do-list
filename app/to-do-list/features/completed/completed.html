@@ -1,0 +1,11 @@
+<div class="main">
+  <form action="#">
+    <h3>Completed!!!</h3>
+    <p ng-repeat="i in CompletedVM.list"
+       ng-if="i.completeBy == true"
+       ng-click="CompletedVM.check(i._id)">
+        <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="{{i._id}}" />
+        <label for="{{i._id}}">{{i.actualTodo}}</label>
+    </p>
+  </form>
+</div>

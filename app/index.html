@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Advanced To-Do</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+      <meta name="fragment" content="!">
+
+      <!-- favicon -->
+      <link rel="icon" type="image/png" href="to-do-list/layout/assets/images/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="to-do-list/layout/assets/images/favicon-16x16.png" sizes="16x16" />
+      <!--Angular JS library JS and the Angular UI-Router library-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+      <!-- google font-->
+      <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+      <!--custom CSS -->
+      <link rel="stylesheet" href="to-do-list/layout/assets/styles/layout.css">
+    </head>
+      <body ng-app="toDo">
+        <h1 class="title center">To-Do list</h1>
+
+        <div class="nav-wrapper container center">
+          <!-- link tag -->
+          <a class="center" ui-sref="list">List</a>
+          <a class="center" ui-sref="create">Create</a>
+          <a class="center" ui-sref="completed">Completed</a>
+        </div>
+
+        <ui-view></ui-view>
+
+        <!-- jQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- materialize-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+        <!-- main module -->
+        <script src="to-do-list/toDo.module.js"></script>
+
+        <!-- We need to include EVERY JS file for our application here -->
+        <script src="to-do-list/features/completed/completed.module.js"></script>
+        <script src="to-do-list/features/completed/completed.controller.js"></script>
+        <script src="to-do-list/features/completed/completed.route.js"></script>
+
+        <script src="to-do-list/features/create/create.module.js"></script>
+        <script src="to-do-list/features/create/create.controller.js"></script>
+        <script src="to-do-list/features/create/create.route.js"></script>
+
+        <script src="to-do-list/features/list/list.module.js"></script>
+        <script src="to-do-list/features/list/list.controller.js"></script>
+        <script src="to-do-list/features/list/list.route.js"></script>
+      </body>
+</html>

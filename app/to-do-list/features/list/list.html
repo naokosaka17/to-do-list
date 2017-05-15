@@ -1,0 +1,29 @@
+<div class="main">
+  <form action="#">
+    <h3>Overdue</h3>
+    <p ng-repeat="i in ListVM.list"
+       ng-if="i.dueDate < ListVM.date && i.completeBy == false && i.isTod != ListVM.dateTod"
+       ng-click="ListVM.check(i._id)">
+        <input type="checkbox" class="filled-in checkbox-red" id="{{i._id}}" />
+        <label for="{{i._id}}">{{i.actualTodo}}</label>
+    </p>
+    <br>
+
+      <h3>Due Today</h3>
+      <p ng-repeat="i in ListVM.list"
+         ng-if="i.isTod == ListVM.dateTod && i.completeBy == false"
+         ng-click="ListVM.check(i._id)">
+          <input type="checkbox" class="filled-in checkbox-red" id="{{i._id}}" />
+          <label for="{{i._id}}">{{i.actualTodo}}</label>
+      </p>
+      <br>
+
+    <h3>Due Later</h3>
+    <p ng-repeat="i in ListVM.list"
+       ng-if="i.dueDate > ListVM.date && i.completeBy == false && i.isTod != ListVM.dateTod"
+       ng-click="ListVM.check(i._id)">
+        <input type="checkbox" class="filled-in checkbox-red" id="{{i._id}}" />
+        <label for="{{i._id}}">{{i.actualTodo}}</label>
+    </p>
+  </form>
+</div>
