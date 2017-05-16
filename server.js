@@ -20,7 +20,7 @@ mongoose.Promise = Promise;
 app.use(express.static(__dirname + "/app"));
 
 // Database configuration with mongoose
-mongoose.connect('mongodb://'+ process.env.dbuser+':'+ process.env.dbpassword+'@ds143181.mlab.com:43181/to-do-list1');
+mongoose.connect('mongodb://test:test@ds143241.mlab.com:43241/heroku_s3cz74mn');
 var db = mongoose.connection;
 
 // Show any mongoose errors
